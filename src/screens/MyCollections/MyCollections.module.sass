@@ -1,0 +1,80 @@
+@import ../../styles/helpers
+
+.root
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  padding: 32px
+
+.bottomMargin
+  margin-bottom: 32px
+
+.subtitle
+  color: $neutrals4
+  margin-bottom: 32px
+
+.flex
+  display: flex
+  align-items: center
+
+.collectionBtn
+  position: relative
+
+.optionBtn
+  position: relative
+  margin-left: 16px
+  background-color: $neutrals8
+  &:hover
+    background-color: $neutrals6
+    box-shadow: none
+    svg
+      fill: black
+  svg
+    margin: 0 !important
+    fill: #000
+
+.collections
+  display: flex
+  flex-wrap: wrap
+
+.dropdown 
+  position: absolute
+  top: 58px
+  left: 0
+  width: 320px
+  background-color: #fff
+  box-shadow: 0 0rem 2rem rgba(0, 0, 0, 0.25)
+  border-radius: 8px
+  padding: 1rem
+  overflow: hidden
+  z-index: 999
+  transition: height 300ms ease
+  a
+    color: $neutrals1
+    font-size: 14px
+    +dark
+      color: $neutrals10
+  +dark
+    background-color: $neutrals1
+    box-shadow: 0 0.2rem 1rem rgba(35, 38, 47, 0.5)
+
+.menuItem 
+  height: 50px
+  display: flex
+  align-items: center
+  border-radius: 8px
+  font-size: .9rem
+  transition: background 300ms
+  padding: 0.5rem
+  margin: .5rem 0
+  cursor: pointer
+  +m
+    font-size: .75rem
+  & .iconButton
+    margin-right: 0.5rem
+  & .iconButton:hover
+    filter: none  
+  &:hover   
+    background-color: $neutrals10
+    +dark
+      background-color: $neutrals3

@@ -1,0 +1,26 @@
+{
+  "CONTRACT_ADDRESS": "0x67d807b545455a1a6d6b11d7a18db1488da4571c",
+  "SCAN_LINK": "https://opensea.io/collection/REFINED-APE-BLOCK-PARTY",
+  "NETWORK": {
+    "NAME": "ETH",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "REFINED APE BLOCK PARTY",
+  "SYMBOL": "RABP",
+  "MAX_SUPPLY": 8888,
+  "WEI_COST": 80000000000000000,
+  "DISPLAY_COST": 0.08,
+  "GAS_LIMIT": 310000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/REFINED-APE-BLOCK-PARTY",
+  "TELEGRAM": "https://t.me/rabnft",
+  "TWITTER": "https://twitter.com/RABPNFT",
+  "DISCORD": "https://discord.gg/gaRvAXkhDc",
+  "CLOSEDSEA": "https://closedsea.com/",
+  "DISCORD1": "DISCORD",
+  "TELEGRAM1": "TELEGRAM",
+  "TWITTER1": "TWITTER",
+  "CLOSEDSEA1": "CLOSEDSEA",
+  "SHOW_BACKGROUND": true
+}

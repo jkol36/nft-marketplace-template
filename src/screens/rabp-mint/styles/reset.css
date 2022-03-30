@@ -1,0 +1,446 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* @font-face {
+  font-family: "coder";
+  src: local("coder"), url(font.woff) format("woff");
+} */
+
+body {
+  margin: 0;
+  /* font-family: "coder", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* html {
+  background-color: "#4C4C4C";
+} */
+
+div {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+.roadmap {
+  padding: 0rem 0;
+}
+.roadmap ul,
+.roadmap ol {
+  list-style: disc;
+}
+/* .roadmap h2 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-size: clamp(25px, 3vw, 35px);
+}
+.roadmap p {
+  width: 85%;
+  font-size: 1rem;
+  font-family: "Spartan-Light";
+  font-weight: 600;
+  line-height: 1.5;
+} */
+.roadmap__timeline {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+.roadmap__timeline > div.roadmap__timeline-data {
+  width: 351px;
+  max-width: 351px;
+  margin: 1.6rem 0;
+  position: relative;
+  padding: 24px;
+}
+
+@media (max-width: 1300px) {
+  .roadmap__timeline > div.roadmap__timeline-data {
+    margin: 0.6rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap__timeline > div.roadmap__timeline-data {
+    padding: 16px;
+  }
+}
+
+.roadmap__timeline-data h3 {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+.roadmap__timeline-data ul li {
+  font-weight: 400;
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
+.roadmap__timeline-img {
+  position: absolute;
+  width: 100%;
+  left: -3.5%;
+  top: 100%;
+  transform: translate(0%, -50%);
+}
+
+.roadmap__timeline-circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.roadmap__timeline-circle.roadmap__timeline-circle-top.top-1,
+.roadmap__timeline-circle.roadmap__timeline-circle-top.top-2,
+.roadmap__timeline-circle.roadmap__timeline-circle-bottom.bottom-1,
+.roadmap__timeline-circle.roadmap__timeline-circle-bottom {
+  bottom: -11%;
+  left: 0%;
+}
+.roadmap__timeline-outer-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid var(--color-purple);
+  position: absolute;
+}
+.roadmap__timeline-inner-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #39c7d1;
+  position: absolute;
+  z-index: -1;
+}
+.roadmap__timeline-data-1 {
+  order: 1;
+}
+.roadmap__timeline-data-2 {
+  order: 3;
+}
+.roadmap__timeline-data-3 {
+  order: 5;
+}
+.roadmap__timeline-data-4 {
+  order: 2;
+}
+.roadmap__timeline-data-5 {
+  order: 4;
+}
+
+@media screen and (max-width: 2002px) {
+  .roadmap__timeline-img {
+    position: absolute;
+    width: 100%;
+    left: -3.5%;
+    top: 60%;
+    transform: translate(0%, -50%);
+  }
+
+  .roadmap__timeline-circle.roadmap__timeline-circle-bottom.bottom-1 {
+    bottom: unset;
+    top: -5.5% !important;
+    left: 0%;
+  }
+  /* .roadmap__timeline-data-3 {
+    order: 3;
+  }
+  .roadmap__timeline-data-2 {
+    order: 5;
+  } */
+}
+
+/* @media screen and (max-width: 1849px) {
+  .roadmap__timeline-img {
+    top: 100%;
+  }
+  .header img:nth-child(2) {
+    position: relative;
+    left: 17%;
+  }
+} */
+
+/* @media screen and (max-width: 1710px) {
+  .roadmap__timeline-img {
+    top: 55%;
+  }
+  .roadmap__timeline-circle.roadmap__timeline-circle-top.top-1,
+  .roadmap__timeline-circle.roadmap__timeline-circle-top.top-2,
+  .roadmap__timeline-circle.roadmap__timeline-circle-bottom {
+    bottom: -5%;
+    left: 3.4%;
+  }
+  .roadmap__timeline-circle.roadmap__timeline-circle-top.top-2 {
+    bottom: unset;
+    top: -18% !important;
+    left: 0%;
+  }
+} */
+
+@media screen and (max-width: 1651px) {
+  .roadmap__timeline-img {
+    top: 55%;
+  }
+  .roadmap__timeline-circle.roadmap__timeline-circle-top.top-1,
+  .roadmap__timeline-circle.roadmap__timeline-circle-top.top-2,
+  .roadmap__timeline-circle.roadmap__timeline-circle-bottom {
+    bottom: -12%;
+    left: 3.4%;
+  }
+  .roadmap__timeline-circle.roadmap__timeline-circle-top.top-2 {
+    bottom: unset;
+    top: -5% !important;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .roadmap__timeline-circle.roadmap__timeline-circle-bottom {
+    bottom: -12%;
+    left: 3.4%;
+  }
+  .roadmap__timeline-circle.roadmap__timeline-circle-top.top-1 {
+    bottom: -12% !important;
+    /* top: -14.5% !important; */
+    left: 0%;
+    /* display: none; */
+  }
+  .roadmap__timeline-circle.roadmap__timeline-circle-top.top-2 {
+    bottom: unset;
+    top: -5% !important;
+    left: 0%;
+  }
+
+  /* .roadmap__timeline-data-1 {
+    order: 1;
+  }
+  .roadmap__timeline-data-2 {
+    order: 2;
+  }
+  .roadmap__timeline-data-3 {
+    order: 3;
+  }
+  .roadmap__timeline-data-4 {
+    order: 4;
+  }
+  .roadmap__timeline-data-5 {
+    order: 5;
+  } */
+}
+
+@media screen and (max-width: 1300px) {
+  .roadmap__timeline > img {
+    display: none;
+  }
+  .roadmap__timeline-circle {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 1146px) {
+  .roadmap__timeline > img {
+    display: none;
+  }
+  .roadmap__timeline-circle {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 676px) {
+  .roadmap-container {
+    padding: 1rem 0;
+  }
+
+  /* .video-containerr {
+    height: 550px;
+  } */
+}
+.videoo {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -3px;
+  object-fit: cover;
+}
+
+/* @media (max-width: 600px) {
+  .video-containerr {
+    position: relative;
+    top: 50%;
+    transform: translate(0, 50%);
+  }
+  .content {
+    top: 0;
+  }
+} */
+
+.video-containerr {
+  height: 100%;
+}
+.btnNew {
+  padding: 1rem;
+  font-size: 18px;
+  margin: 5px 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #fff;
+  display: inline-block;
+  color: #ec008c;
+}
+.btnNewContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}

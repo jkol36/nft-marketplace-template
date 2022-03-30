@@ -1,0 +1,122 @@
+@import ../../../styles/helpers
+
+.root
+  position: relative
+  cursor: pointer
+  height: 100%
+
+.head
+    max-width: 600px
+    margin: 0 auto 128px
+    text-align: center
+    +x
+        margin-bottom: 112px
+    +m
+        margin-bottom: 64px
+.section
+    background-color: #CFCFCF
+
+
+.card 
+  background-color: #fff
+  border-radius: 1rem
+  overflow: hidden
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 0 0 0.1rem 0
+
+
+.card__link 
+  /* width: 25px;*/
+  //height: 25px 
+  padding: 0.35rem
+  border-radius: 50%
+  margin-left: 0.25rem
+  background-color: var(--color-secondary)
+  color: #fff
+  display: inline-block
+  display: flex
+  align-items: center
+  justify-content: center
+
+.card__link.card__twitter 
+  background-color: rgb(52, 171, 243)
+
+.card__link.card__fb 
+  background-color: rgb(59, 89, 152)
+
+.card__link.card__telegram 
+  background-color: rgb(44, 165, 224)
+
+.card__link.card__insta 
+  background-color: rgb(38, 38, 38)
+
+.card__head 
+  height: 85%
+  overflow: hidden
+
+.card__head > img 
+  width: 100%
+  height: 101%
+  // object-fit: none
+  display: inline-block
+
+.card__body,
+.card__footer 
+  padding: 0.5rem 0.8rem
+
+.card__body 
+  border-bottom: 1px solid rgb(181, 162, 198)
+
+.card__body img,
+.social__icons img 
+  width: 100%
+
+.card__bodyHeadLeft img 
+  width: 22px
+  height: 22px
+
+
+.card__footerHeadLeft img 
+  width: 28px
+  height: 29px
+
+.card__bodyHeadLeft img:not(:last-child),
+.card__footerHeadLeft img:not(:last-child) 
+  margin-right: 4px
+
+.card__bodyHeadRight,
+.card__footerHeadRight 
+  display: flex
+
+.card__footerHeadRight > p 
+  font-size: 12px
+
+.card__bodyHead,
+.card__footerHead 
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.card__footerHeadLeft 
+  display: flex
+
+.card__footerHeadImg 
+  position: relative
+
+.card__footerHeadRight 
+  text-align: center
+  color: rgb(181, 162, 198)
+
+.circle
+  border-radius: 50%
+  img
+    border-radius: 50%
+
+.category
+  position: absolute
+  top: 8px
+  left: 8px
+  z-index: 1

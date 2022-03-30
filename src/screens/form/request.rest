@@ -1,0 +1,14 @@
+POST https://gbsprojects.xyz/squash/api/react_test
+Content-Type: application/json
+
+{
+    "bio":"i ma web deve",
+    "name":"Raheel",
+    "site":"http://www.go.com",
+    "profile_pic":"http://dfffff",
+    "cover_pic":"http://dfdfdfdf",
+    "type":"2",
+    "email":"Raheel.live@com",
+    "password":"password123"
+
+}

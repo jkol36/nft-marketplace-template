@@ -1,0 +1,31 @@
+.marginleft {
+    margin-left: 128px;
+    margin-top: 30px;
+}
+
+.label {
+    color: rgba(0, 0, 0, 0.5);
+-webkit-tap-highlight-color: transparent;
+//font-size: 12px;
+}
+
+.inp{
+   
+   font-size: 40px;
+}
+.inp:focus{
+    outline:solid 10px black;
+}
+.filewidth {
+    width: 60%;
+}
+
+
+.leftside {
+    margin-left: 200px;
+}
+@media only screen and (max-width: 600px){
+	.marginleft {
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,301 @@
+@import ../../styles/helpers
+
+.section
+    padding: 30px 0
+    +x
+        padding: 30px 0
+    +m
+        padding: 24px 0
+
+.fill
+    height: 100%
+
+.container
+    display: flex
+    align-items: flex-start
+    padding: 0 40px
+    +t
+        display: block
+
+.containerColumn
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 0 2rem
+    
+
+.bg
+    position: relative
+    flex-grow: 1
+    order: 1
+    margin-left: 96px
+    // margin-right: 96px
+    +x
+        margin-right: 64px
+    +d
+        margin-right: 32px
+    +t
+        margin: 0 0 32px
+
+.details
+    display: flex
+    flex-direction: column
+    flex-shrink: 0
+    width: 57%
+    +d
+        width: 45%
+    +t
+        width: 100%
+.nameshare
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.share
+    align-self: flex-end
+    display: flex
+    margin-bottom: 18px
+    //padding-left: 2rem
+    margin-top: .4rem
+    
+    a
+        margin: 0px
+    img
+        width: 22px
+.dropdown
+    position: relative
+    svg
+        fill:#000
+        +dark
+            fill: #fff
+
+.dropdownMenu
+    position: absolute
+    top: 40px
+    right: 10px
+    background-color: #fff
+    padding: 1rem
+    border-radius: 4px
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.05)
+    border: 1px solid rgba(0, 0, 0, 0.2)
+.dropdownItem
+    display: flex  
+    img
+      margin-right: 6px
+.shareItem
+    padding: 0.1rem .4rem .2rem 0.4rem
+    svg
+        fill:#000
+        +dark
+            fill:#fff
+    
+
+    
+
+
+.stats
+    font-size: 16px
+    font-weight: 700
+    margin-right: 8px
+    display: flex
+    // color: $blue 
+    // & a
+       
+    //    &:link
+    //        color: $blue 
+
+// border-color: #dee2e6;
+.collection
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    
+    & > div
+        flex: 0 0 25%
+        padding: 1rem
+        overflow: hidden
+        transition: all 1s ease
+    // & > div:first-child
+    //     flex: 0 0 50%
+        & img
+            height: 92%
+    & > div:hover
+        & img
+            transform: scale(1.1)
+
+    & img
+        border-radius: 1rem
+        width: 100%
+        
+    & img:hover
+        
+.table
+    th, td 
+        padding: 15px
+
+    border-top: 1px solid #dee2e6
+    thead > td
+        border-top: 1px solid #dee2e6
+        font-weight: 600
+    tbody td
+        border-top: 1px solid #dee2e6
+        font-weight: 600
+.statsLink
+    color: $blue !important
+    +poppins
+    font-weight: 300
+    &:hover,
+    &:active
+        color: $blue !important
+    &:link
+        color: $blue !important
+    +dark
+        color: $neutrals5
+        &:hover,
+        &:active
+            color: $neutrals6
+        &:link
+            color: $neutrals6
+    & > svg
+        fill: $neutrals5
+        margin-right: 6px
+.statsImg
+    width: 22px
+    margin: 0 10px
+.preview
+    position: relative
+    // background-color: #fff
+    //box-shadow: 0 1rem 15rem rgba(0, 0, 0, 0.15)
+    border-top-right-radius: 1rem
+    border-top-left-radius: 1rem
+    //border-radius: 1rem
+    //overflow: hidden
+     
+    //margin-bottom: 2.5rem
+    img
+        width: 100%
+        border-top-left-radius: 16px
+        border-top-right-radius: 16px
+        //border-radius: 16px
+        box-shadow: 0 0 50px 0 rgba(14, 14, 14,  0.25)
+
+.categories
+    position: absolute
+    top: 24px
+    left: 24px
+    display: flex
+    flex-wrap: wrap
+    margin: -8px 0 0 -8px
+
+.category
+    margin: 8px 0 0 8px
+.options
+    display: flex
+    justify-content: space-between
+
+// .options
+//     //position: absolute
+//     // top: auto
+//     // left: 50%
+//     // bottom: 32%
+//     border-radius: 50%
+//     transform: translateX(-50%)
+
+.title
+    order: -1
+    margin-bottom: 8px
+    +x
+    +d
+    +t
+    +m
+    +a
+    +s
+      order: 0
+
+.cost
+    display: flex
+    align-items: center
+    margin-bottom: 40px
+
+.price
+    +dm-sans
+    font-size: 16px
+    line-height: 30px
+    &:not(:last-child)
+        margin-right: 8px
+    
+.counter
+    +button-1
+    color: $neutrals4
+
+.info
+    margin-bottom: 40px
+    +body-2
+    color: $neutrals4
+    a
+        text-decoration: underline
+        font-weight: 500
+        color: $neutrals2
+        +dark
+            color: $neutrals8
+        &:hover
+            text-decoration: none
+
+.nav
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 32px
+    //border-radius: 50px
+    border-radius: 6px
+    padding: 6px
+    // border-radius: 20px
+    // box-shadow: inset 0 0 0 2px $neutrals6
+    // & *
+    //     margin: 5px
+    +dark
+        box-shadow: inset 0 0 0 2px $neutrals3
+
+// top: 66%;
+//     z-index: 999;
+//     left: 50%;
+
+.link
+    padding: 6px 12px
+    border-radius: 4px
+    background: none
+    +button-3
+    color: $neutrals4
+    transition: all .2s
+    
+    &:hover
+        color: $blue
+        +dark
+            color: $neutrals6
+    &.active
+        background: $blue
+        color: $neutrals8
+        +dark
+            background: $neutrals8
+            color: $neutrals2
+    &:not(:last-child)
+        margin-right: 8px
+
+.users
+    margin-bottom: auto
+
+.control
+    margin-top: 20px
+    +m
+        margin-top: 17px
+
+.fullWidth
+    width: 100%
+
+.ban
+    width: 100%
+    height: 400px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 1.25rem
+    color: $error

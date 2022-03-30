@@ -1,0 +1,47 @@
+@import ../../styles/helpers
+
+.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 80px
+    height: 80px
+    margin: 72px auto 32px
+    border-radius: 50%
+    background: $purple
+    svg
+        fill: $neutrals8
+    
+.info
+    margin: 16px 0px
+    text-align: center
+    +body-bold-2
+.btns
+    margin-top: 25px
+.button
+    margin-top: 5px
+    width: 100%
+    &:not(:last-child)
+        margin-bottom: 8px
+
+.line
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    position: relative
+
+.input
+    width: 100%
+    border-bottom: 1px solid $neutrals4
+    height: 40px
+    padding: 0px 8px
+    margin-right: 16px
+
+.inputOption
+    position: absolute
+    bottom: 0px
+    right: 0px
+
+.insuffiientFunds
+    color: $error

@@ -1,0 +1,130 @@
+@import ../../../styles/helpers
+
+.section
+    position: relative
+    display: flex
+    align-items: center
+    // min-height: 800px
+    padding: 25px 1rem
+    border-top: 1px solid $neutrals6
+    +d
+        min-height: 576px
+    +m
+        display: block
+        min-height: auto
+        padding: 64px 0
+        text-align: center
+    +dark
+        border-color: $neutrals3
+
+
+.container
+    padding: 1rem 2rem
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+
+.stage
+    margin-bottom: 12px
+    +hairline-1
+    color: $neutrals4
+.wrap
+    position: relative
+    z-index: 3
+    max-width: 1050px
+    +q
+        max-width: 850px
+    +f
+        max-width: 670px 
+    +w
+        max-width: 480px
+    +d
+        max-width: 420px
+    +t
+        max-width: 100%
+        margin-bottom: 2rem
+
+.title
+    margin-bottom: 20px
+    font-size: 45px
+
+    +f
+        font-size: 30px
+    // +w
+    //     font-size: 38px
+    // +x
+    //     font-size: 38px
+    +d 
+        font-size: 32px
+    +a
+        font-size: 26px
+
+    
+.image__container
+    max-width: 400px
+    height: 100%
+    border-radius: 1rem
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.13)
+    +w
+        max-width: 350px
+    +t
+        max-width: 100%
+.text
+    margin-bottom: 40px
+    +body-2
+    color: $neutrals4
+
+.btns
+    display: flex
+    +m
+        display: block
+
+.button
+    // +m
+    //     width: 100%
+    &:not(:last-child)
+        margin-right: 16px
+        
+    
+// .gallery
+//     position: absolute
+//     top: 50%
+//     right: calc(28% - 460px)
+//     width: 684px
+//     transform: translateY(-50%)
+//     pointer-events: none
+//     +x
+//         right: calc(50% - 680px)
+//         width: 550px
+//     +d
+//         right: calc(50% - 580px)
+//         width: 470px
+//     +t
+//         right: calc(50% - 500px)
+//         width: 470px
+//     +m
+//         position: static
+//         transform: translateY(0)
+//     +s
+//         width: auto
+//         margin: 0 0 0 -22px
+
+// .preview
+    
+//     &:first-child
+//         position: relative
+//         z-index: 2
+//     &:nth-child(2)
+//         right: -11%
+//         bottom: -3.5%
+//         z-index: 3
+//         width: 47%
+//     &:not(:first-child)
+//         position: absolute
+//     img
+//         width: 70%
+//         margin-left: 15%
+//         box-shadow: 0 1rem 3rem rgba(0, 0, 0, .13)
